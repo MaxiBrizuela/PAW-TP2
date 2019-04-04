@@ -1,0 +1,17 @@
+label { 
+    clear: both;
+    float:left;
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+  
+  input, select, p {
+    margin-top: 15px;
+    float:left;
+  }
+  
+  .boton {
+    clear: both;
+    margin-right: 10px;
+  }
+  

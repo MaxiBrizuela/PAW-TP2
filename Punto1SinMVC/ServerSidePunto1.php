@@ -1,6 +1,5 @@
 <?php
-if(isset($_POST["Enviar"])){//Si apretamos el boton Enviar
-
+function validarCamposObligatorios(){
     if(
         ($_POST["nombre"] == "") ||
         ($_POST["email"] == "") ||
@@ -8,12 +7,20 @@ if(isset($_POST["Enviar"])){//Si apretamos el boton Enviar
         ($_POST["fechaNacimiento"] == "") ||
         ($_POST["fechaTurno"] == "") 
     ){
+        return false;
+    }else{
+        return true;
+    }
+}
+
+validate_email($_POST['email']);
+
+if(isset($_POST["Enviar"])){//Si apretamos el boton Enviar
+    if(!validarCamposObligatorios()){
         echo "<strong>Falta completar campos obligatorios</strong>";
         require 'index.php';
-    }
-    else
-    {
-        echo "Datos validados en cliente y servidor. Todo correcto!";
+    }else{
+        echo "Todo correcto! Datos validados.";
     }
 }
 ?>

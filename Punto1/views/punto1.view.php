@@ -13,7 +13,7 @@
     <section>
         <h2>Cargue sus datos</h2>
         <p>Obligatorio*</p>
-        <form method="post" action="controllers/llamaValidarPunto1.php" oninput="valorAltura.value = altura.valueAsNumber">
+        <form method="post" action="ValidarPunto1" oninput="valorAltura.value = altura.valueAsNumber">
             <label for="nombre">*Nombre: </label>
             <input type="text" name="nombre">
 

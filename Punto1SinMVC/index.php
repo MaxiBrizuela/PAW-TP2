@@ -63,13 +63,13 @@
         <p>Obligatorio*</p>
         <form name="formulario" method="post" action="ServerSidePunto1.php" oninput="valorAltura.value = altura.valueAsNumber" ><!--onsubmit="return validacionCliente();">-->
             <label for="nombre">*Nombre: </label>
-            <input type="text" name="nombre" value="<?=$nombre?>" id="nombre">
+            <input type="text" name="nombre" value="<?=$nombre?>" require>
 
             <label for="email">*E-mail: </label>
-            <input type="email" name="email" value="<?=$email?>" id="email">
+            <input type="email" name="email" value="<?=$email?>" require>
 
             <label for="telefono">*Teléfono: </label>
-            <input type="number" name="telefono" min="0" value="<?=$telefono?>" id="telefono">
+            <input type="number" name="telefono" min="0" value="<?=$telefono?>" require>
 
             <label for="edad">Edad: </label>
             <input type="number" name="edad" min="0" value="<?=$edad?>">
@@ -82,7 +82,7 @@
             <p><output for="altura" name="valorAltura">0</output>cm</p>
 
             <label for="fechaNacimiento">*Fecha de nacimiento: </label>
-            <input type="date" name="fechaNacimiento" value="<?=$fechaNacimiento?>">
+            <input type="date" name="fechaNacimiento" value="<?=$fechaNacimiento?>" require>
 
             <label for="pelo">Color de pelo: </label>
             <select name="pelo" value="<?=$pelo?>">
@@ -93,7 +93,7 @@
             </select>
 
             <label for="fechaTurno">*Fecha del turno: </label>
-            <input type="date" name="fechaTurno" value="<?=$fechaTurno?>">
+            <input type="date" name="fechaTurno" value="<?=$fechaTurno?>" require>
 
             <label for="turno">Horario del turno: </label>
             <input type="time" name="turno" min="08:00:00" max="17:00:00" step="900" value="<?=$turno?>">

@@ -16,7 +16,7 @@
             foreach ($_GET as $key => $value) {
                 $$key = htmlspecialchars($_GET[$key]);
                 if($$key <> "Enviar")
-                    echo "<p>".$$key."</p>";	
+                    echo "<p>".$key.' = '.$$key."</p>";	
             }
         ?>
     </section>

@@ -15,10 +15,13 @@
         <?php
             foreach ($_POST as $key => $value) {
                 $$key = htmlspecialchars($_POST[$key]);
-                if($$key <> "Enviar")
+                if($key <> "Enviar")
                     echo "<p>".$key.' = '.$$key."</p>";	
             }
+            echo "holas";
         ?>
+        <img src="<?=$dirImagen?>" alt="Imagen">
+
     </section>
 </body>
 </html>

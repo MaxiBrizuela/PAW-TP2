@@ -14,16 +14,16 @@
     <?php
     //Si la validacion del servidor falla, escribo los datos ingresados por el cliente 
     //antes de la llamada al server para que estos no esten vacios.
-    $nombre = $_POST['nombre'];
-    $email = $_POST['email'];
-    $telefono = $_POST['telefono'];
-    $edad = $_POST['edad'];
-    $talla = $_POST['talla'];
-    $altura = $_POST['altura'];
-    $fechaNacimiento = $_POST['fechaNacimiento'];
-    $pelo = $_POST['pelo'];
-    $fechaTurno = $_POST['fechaTurno'];
-    $turno = $_POST['turno'];
+    $nombre = $_GET['nombre'];
+    $email = $_GET['email'];
+    $telefono = $_GET['telefono'];
+    $edad = $_GET['edad'];
+    $talla = $_GET['talla'];
+    $altura = $_GET['altura'];
+    $fechaNacimiento = $_GET['fechaNacimiento'];
+    $pelo = $_GET['pelo'];
+    $fechaTurno = $_GET['fechaTurno'];
+    $turno = $_GET['turno'];
     ?>
 
     <section class="seccionPrincipal">

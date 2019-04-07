@@ -13,8 +13,8 @@
     <section>
         <h2>Datos validados. Todo correcto!</h2>
         <?php
-            foreach ($_POST as $key => $value) {
-                $$key = htmlspecialchars($_POST[$key]);
+            foreach ($_GET as $key => $value) {
+                $$key = htmlspecialchars($_GET[$key]);
                 if($$key <> "Enviar")
                     echo "<p>".$$key."</p>";	
             }

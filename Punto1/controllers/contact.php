@@ -8,7 +8,7 @@ Mail: maxin.brizuela@gmail.com
 Mova Ignacio<br/>
 Mail: ignaciomova@outlook.com
 <br/><br/>
-Nombre: Zabala Mariano<br/>
+Zabala Mariano<br/>
 Mail: marianol.zabala@gmail.com</b>";
 
 require 'views/contact.view.php';

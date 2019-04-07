@@ -90,7 +90,7 @@
             }
         ?>
 
-        <form name="formulario" method="post" action="ValidarPunto1" oninput="valorAltura.value = altura.valueAsNumber">
+        <form name="formulario" method="post" action="ValidarPunto2" oninput="valorAltura.value = altura.valueAsNumber">
             <label for="nombre">*Nombre: </label>
             <input type="text" name="nombre" value="<?=$nombre?>" required>
 

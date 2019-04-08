@@ -1,7 +1,23 @@
 <?php
-if(isset($_POST["Enviar"])){//Si apretamos el boton Enviar    
+if(isset($_POST["Enviar"])){//Si apretamos el boton Enviar
+    
+    //Si la validacion del servidor falla, escribo los datos ingresados por el cliente 
+    //antes de la llamada al server para que estos no esten vacios.
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    $telefono = $_POST['telefono'];
+    $edad = $_POST['edad'];
+    $talla = $_POST['talla'];
+    $altura = $_POST['altura'];
+    $fechaNacimiento = $_POST['fechaNacimiento'];
+    $pelo = $_POST['pelo'];
+    $fechaTurno = $_POST['fechaTurno'];
+    $turno = $_POST['turno'];
+
+    $fallo = false;
+
     validarCampos();
-    if($GLOBALS['fallo']){
+    if($fallo){
         require 'controllers/punto2.php';//Fallo algun valor
     }else{
         require 'controllers/punto2.validado.php';//Todos los datos validos

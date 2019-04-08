@@ -11,21 +11,6 @@
     <?php require 'nav.view.php' ?>
     <h1><?= $main_title ?></h1>
 
-    <?php
-    //Si la validacion del servidor falla, escribo los datos ingresados por el cliente 
-    //antes de la llamada al server para que estos no esten vacios.
-    $nombre = $_POST['nombre'];
-    $email = $_POST['email'];
-    $telefono = $_POST['telefono'];
-    $edad = $_POST['edad'];
-    $talla = $_POST['talla'];
-    $altura = $_POST['altura'];
-    $fechaNacimiento = $_POST['fechaNacimiento'];
-    $pelo = $_POST['pelo'];
-    $fechaTurno = $_POST['fechaTurno'];
-    $turno = $_POST['turno'];
-    ?>
-
     <section class="seccionPrincipal">
         <h2>Cargue sus datos</h2>
 

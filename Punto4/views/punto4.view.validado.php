@@ -14,13 +14,14 @@
         <h2>Datos validados. Todo correcto!</h2>
         <?php
             foreach ($_POST as $key => $value) {
-                $$key = htmlspecialchars($_POST[$key]);
+                $value = htmlspecialchars($_POST[$key]);
                 if($key <> "Enviar")
-                    echo "<p>".$key.' = '.$$key."</p>";	
+                    echo "<p>".$key.' = '.$value."</p>";	
             }
-            echo "holas";
+        if ($dirImagen){
+            echo "<img src='$dirImagen' alt='Imagen'>";
+        }
         ?>
-        <img src="<?=$dirImagen?>" alt="Imagen">
 
     </section>
 </body>

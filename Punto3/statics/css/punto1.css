@@ -5,6 +5,13 @@
     margin-right: 10px;
   }
   
+  small {
+    clear: both;
+    float:left;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+
   input, select, .cm {
     margin-top: 15px;
     float:left;

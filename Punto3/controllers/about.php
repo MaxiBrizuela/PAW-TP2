@@ -24,7 +24,7 @@ El historial de URL también se guarda en el navegador y puede ser visto por cua
 <img src='../img/get2.png' alt='Form data'>
 <br/><br/>
 
-<b>POST:</b> Con el método post, los datos se envían como una secuencia de entrada (input stream) al servidor, yendo dentro del cuerpo de entidad y<br/> 
+<b>POST:</b> Con el método post, los datos se envían como una secuencia de entrada (input stream) al servidor, viajando dentro del cuerpo de entidad y<br/> 
 no en la URL. 
 <br/><br/>
 De forma que, en lugar de adjuntar los datos de formularios en la URL en pares nombre/valor, adjunta los datos dentro del cuerpo de la<br/> 

@@ -16,7 +16,12 @@ Este no es un método seguro ya que los datos son pasados como ya mencionamos de
 (los server logfile son generalmente readable para los usuarios del sistema). 
 <br/><br/>
 Por lo tanto cualquier información confidencial como contraseñas estarían expuestas.<br/> 
-El historial de URL también se guarda en el navegador y puede ser visto por cualquier persona con acceso al equipo. 
+El historial de URL también se guarda en el navegador y puede ser visto por cualquier persona con acceso al equipo.
+<br/><br/>
+Este método debera ser utilizado cuando la información enviada al servidor no se trata de datos confidenciales o sensibles (datos personales,</br> 
+cuentas de usuario, contraseñas), y además esta información no deberá sobrepasar el límite de caracteres impuesto por el método GET. Generalmente</br>
+es utilizado para realizar consultas a una base de datos en donde se ingresa una categoría para filtrar la búsqueda de un producto, o por ejemplo/br>
+cuando un usuario elige un rubro, especialidad, etc. mediante opciones. 
 <br/><br/>
 
 <img src='../img/get1.png' alt='request URL GET'>
@@ -29,6 +34,9 @@ no en la URL.
 <br/><br/>
 De forma que, en lugar de adjuntar los datos de formularios en la URL en pares nombre/valor, adjunta los datos dentro del cuerpo de la<br/> 
 solicitud HTTP. Esto evita que los datos de los formularios con método POST sean almacenados en el historial o en BookMarks (Favoritos).
+<br/><br/>
+El método POST debería ser utilizado cuando la información que se desea enviar al servidor es confidencial o sensible, y no puede quedar</br>
+expuesta de ninguna manera hacia el usuario; o cuando la información a enviar supera el tamaño máximo admitido por el método GET.
 <br/><br/>
 
 <img src='../img/post1.png' alt='request URL POST'>

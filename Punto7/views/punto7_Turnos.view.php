@@ -44,7 +44,7 @@
                                         <td><?=$turno['nombre']?></td>
                                         <td><?=$turno['telefono']?></td>
                                         <td><?=$turno['email']?></td>
-                                        <td><button onclick="return llamar();">Link a la ficha del turno</button></td>
+                                        <td><a href="VistaDeFichaDeTurno?id=<?=$turno['id']?>">Link a la ficha del turno</a></td>
                                     </tr>
                                 <?php
                             }
